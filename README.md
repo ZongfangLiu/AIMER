@@ -1,10 +1,35 @@
-# 🧗 AIMER
+<div align="center">
 
-[![Python 3.12+](https://img.shields.io/badge/python-3.12%2B-blue)](pyproject.toml)
-[![Transformers 5.0.0](https://img.shields.io/badge/transformers-5.0.0-orange)](pyproject.toml)
-[![License: Apache 2.0](https://img.shields.io/badge/license-Apache%202.0-black)](LICENSE)
+  <h1>🧗 AIMER</h1>
+  <h3>AIMER: Calibration-Free Task-Agnostic MoE Pruning</h3>
 
-**AIMER: Calibration-Free Task-Agnostic MoE Pruning**
+  <p>
+    <a href="https://arxiv.org/abs/2603.18492">
+      <img src="https://img.shields.io/badge/arXiv-2603.18492-b31b1b?logo=arxiv&logoColor=white" alt="Paper">
+    </a>
+    <a href="https://zongfangliu.github.io/AIMER_Web/">
+      <img src="https://img.shields.io/badge/Project-Website-0f766e?logo=googlechrome&logoColor=white" alt="Website">
+    </a>
+    <a href="pyproject.toml">
+      <img src="https://img.shields.io/badge/python-3.12%2B-blue" alt="Python 3.12+">
+    </a>
+    <a href="pyproject.toml">
+      <img src="https://img.shields.io/badge/transformers-5.0.0-orange" alt="Transformers 5.0.0">
+    </a>
+    <a href="LICENSE">
+      <img src="https://img.shields.io/badge/license-Apache%202.0-black" alt="License: Apache 2.0">
+    </a>
+  </p>
+
+  <p><strong>Absolute mean over root mean square IMportance for Expert Ranking</strong></p>
+
+<p>
+  <a href="https://arxiv.org/abs/2603.18492"><strong>Read the Paper</strong></a>
+  ·
+  <a href="https://zongfangliu.github.io/AIMER_Web/"><strong>Visit the Project Website</strong></a>
+</p>
+
+</div>
 
 AIMER, short for **Absolute mean over root mean square IMportance for Expert Ranking**, is a simple, weight-only criterion for post-training pruning of mixture-of-experts (MoE) language models. Instead of collecting router statistics or activation traces on a calibration set, AIMER ranks experts directly from pretrained weights, prunes them uniformly layer by layer, saves a standard Hugging Face checkpoint, and supports downstream evaluation with the same benchmark stack used in the paper.
 
